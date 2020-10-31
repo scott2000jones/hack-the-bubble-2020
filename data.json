@@ -217,7 +217,7 @@
       "requirment" ["card"],
       "earned": []
     } 
-  }
+  },
   "john honey": {
       "prompt": "You enter john honey and hear a noise coming from the washing machine. A man emerges. He wears a subnet mask and holds a machete. It's JSON. Do you fight him or objectify him",
       "fight": {
