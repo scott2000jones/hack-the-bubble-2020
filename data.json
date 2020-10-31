@@ -74,6 +74,69 @@
         "requirements": [],
         "earned": []
       }
+    },
+    
+    "Cycle": {
+      "prompt": "You are cycling down DRA path. You see a person in your way. Do you continue towards them or swerve to avoid them",
+      "towards": {
+        "newscene": "through",
+        "Time Penalty": 10,
+        "requirements": [],
+        "earned": []
+      },
+      "swerve": {
+        "newscene": "die on bike",
+        "Time Penalty": 5,
+        "requirements": [],
+        "earned": []
+      }
+
+    },
+    "through": {
+      "prompt": "The person does not move out the way. You go through them. They were a ghost",
+      "continue": {
+        "newscene": "devil",
+        "Time Penalty": 10,
+        "requirements": [],
+        "earned": []
+      },
+      "shock": {
+        "newscene": "devil",
+        "Time Penalty": 5,
+        "requirements": [],
+        "earned": []
+      }
+    },
+    "die on bike": {
+      "prompt": "You die whoops",
+      "continue": {
+        "newscene": "nowhere?",
+        "Time Penalty": 10,
+        "requirements": [],
+        "earned": []
+      },
+      "shock": {
+        "newscene": "nowhere?",
+        "Time Penalty": 5,
+        "requirements": [],
+        "earned": []
+      }
+    }, 
+    
+    "choose lab": {
+      "prompt": "You approach the cs buildings. Do you go to Jonh honey or Jack cole",
+      "john honey": {
+        "newscene": "john honey",
+        "Time Penalty": 10,
+        "requirements": [],
+        "earned": []
+      },
+      "jack cole": {
+        "newscene": "jack cole",
+        "Time Penalty": 5,
+        "requirements": [],
+        "earned": []
+      }
     }
     
   }
