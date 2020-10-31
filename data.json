@@ -2,13 +2,13 @@
   "bedroom": {
     "prompt": "Your sitting in your room in dra bashing out code and finaly finish. your body relaxes and you prepare to submit. the wind is howling outside and the thunder keep roaring.  you look out younr window and see the only light is that from the full moon. as you open mms to start uploading a crackles and the power cuts out. the power to your hall has been cut. as your uncharged computer spluters and dies you know what your going to have to do, your going to have to rush to the labs and submit there. Do you put on appropriate clothes or start on your way?",
     "put on appropriate clothes": {
-      "newscene": "outside, appropriate clothing",
+      "newscene": "bedroom 2",
       "Time Penalty": 0,
       "requirements": [],
       "earned": []
     },
     "leave": {
-      "newscene": "bedroom 2",
+      "newscene": "outside, inappropriate clothing",
       "Time Penalty": 3,
       "requirements": [],
       "earned": ["warm clothing"]
@@ -17,13 +17,13 @@
   "bedroom 2": {
     "prompt": "You throw on your jumper and your coat. You start toward the door",
     "leave": {
-      "newscene": "outside inappropriate clothing",
+      "newscene": "outside, appropriate clothing",
       "Time Penalty": 0,
       "requirements": [],
       "earned": []
     },
     "check around for what object you need": {
-      "newscene": "outside inappropriate clothing",
+      "newscene": "outside, appropriate clothing",
       "Time Penalty": 3,
       "requirements": [],
       "earned": ["key", "phone", "card"]
@@ -74,7 +74,7 @@
       "earned": []
     }
   },
-  "ghost-card": {
+  "ghost-nocard": {
     "prompt": "You refuse the card and continue on your way. You turn back to say something but the person is gone. You wonder if they were ever really there.",
     "Continue onwards": {
       "newscene": "devil",
@@ -83,7 +83,7 @@
       "earned": ["card"]
     }
  },
-  "ghost-nocard": {
+  "ghost-card": {
     "prompt": "You accept refuse the card and continue on your way. You turn back to say something but the person is gone. You breifly wonder if they were ever really there, though you still have the card they gave you",
     "Continue onwards": {
       "newscene": "devil",
@@ -109,13 +109,13 @@
   },
   "through": {
     "prompt": "The person does not move out the way, but you go straight through them. You feel a slight chill as you do. Was that a ghost?",
-    "continue": {
+    "Continue": {
       "newscene": "devil",
       "Time Penalty": 10,
       "requirements": [],
       "earned": []
     },
-    "shock": {
+    "Continue in shock": {
       "newscene": "devil",
       "Time Penalty": 5,
       "requirements": [],
@@ -145,13 +145,13 @@
   },
   "choose lab": {
     "prompt": "You approach the cs buildings. Do you go to John honey or Jack cole?",
-    "john honey": {
+    "John honey": {
       "newscene": "john honey",
       "Time Penalty": 10,
       "requirements": [],
       "earned": []
     },
-    "jack cole": {
+    "Jack cole": {
       "newscene": "jack cole",
       "Time Penalty": 5,
       "requirements": [],
@@ -271,7 +271,7 @@
     },
 
     "kicked out": {
-      "prompt": "You are removed from the silent lab for breaking the rules. Through the glass you see you watch in horror as your friend does not make it away in time. You give up, ovrecome with grief"
+      "prompt": "You are removed from the silent lab for breaking the rules. Through the glass you watch in horror as your friend does not make it away in time. You give up, ovrecome with grief"
     },
 
     "nothing was done": {
@@ -280,7 +280,7 @@
     },
 
     "normal": {
-      "prompt": "You enter the room. There is a chill in the air. You are about to walk towards a desk when someone steps in your path. You check your watch",
+      "prompt": "You enter the room. There is a chill in the air. You are about to walk towards a desk when someone steps in your path. Do you talk to them?",
       "Yes": {
         "newscene": "you have time",
         "Time Penalty": 10,
@@ -296,12 +296,12 @@
     },
 
     "you have time": {
-      "prompt": "You pass by the person in your path. You reach a desk and submit your practical. You are free."
+      "prompt": "You don't have time to talk, you miss the deadline."
 
     },
 
     "out of time": {
-      "prompt": "You can't get rid of the person in your path. You miss the deadline. You have failed. "
+      "prompt": "You get to a desk and submit your practical. You are free."
 
     },
   
@@ -334,7 +334,7 @@
   }, 
 
   "idiots end":{
-  "prompt": "Oh you're sure about that are you? Well it sucks to be you I geuss. You are eaten alive by zombies"
+  "prompt": "Oh you're sure about that are you? Well it sucks to be you I guess. You are eaten alive by zombies"
   },
 
   "running end":{
