@@ -1,6 +1,6 @@
 {
   "bedroom": {
-    "prompt": "Your sitting in your room in dra bashing out code and finaly finish. your body relaxes and you prepare to submit. the wind is howling outside and the thunder keep roaring.  you look out younr window and see the only light is that from the full moon. as you open mms to start uploading a crackles and the power cuts out. the power to your hall has been cut. as your uncharged computer spluters and dies you know what your going to have to do, your going to have to rush to the labs and submit there. Do you put on appropriate clothes or start on your way?",
+    "prompt": "It is 8:30 on a dark and stormy Halloween night, the wind is howling, and the deadline for your practical is looming large. You think you are ready to submit – your report is finished, your code passes all of its tests, and you’ve just zipped your archive. All seems well, but as you log in to MMS, you hear a crash of thunder and a flash of light, and your computer suddenly turns off. You frantically press the power button to turn it on again, but it’s no use. There’s only one option left – rush to the labs and hope there’s time to submit it before 9pm. But who knows what you might encounter on the way.... Do you put on appropriate clothes or start on your way?",
     "put on appropriate clothes": {
       "newscene": "bedroom 2",
       "Time Penalty": 0,

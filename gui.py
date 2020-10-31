@@ -39,7 +39,7 @@ earnedItems = []
 
 
 textframe = Frame(frame)
-textframe.place(anchor = "n", relx = 0.5, rely = 0.4, relwidth = 0.8)
+textframe.place(anchor = "n", relx = 0.5, rely = 0.4, relwidth = 0.9)
 # optionframe = Frame(master)
 # optionframe.place(anchor = "s", relx = 0.5, rely = 0.8)
 
