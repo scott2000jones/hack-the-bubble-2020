@@ -123,19 +123,7 @@
     }
   },
   "die on bike": {
-    "prompt": "You die whoops",
-    "continue": {
-      "newscene": "nowhere?",
-      "Time Penalty": 10,
-      "requirements": [],
-      "earned": []
-    },
-    "shock": {
-      "newscene": "nowhere?",
-      "Time Penalty": 5,
-      "requirements": [],
-      "earned": []
-    }
+    "prompt": "You fall and die"
   }, 
   "devil":{
     "prompt":"you step of the DRA path into the area above the north Huagh. In the shelter of the sport center your freind. ypu tell him what your doing. he says, stroking his goatee: 'you'll never make it on time. why don't you come with me amex for internships'", 
@@ -230,6 +218,94 @@
       "earned": []
     } 
   }
+  "john honey": {
+      "prompt": "You enter john honey and hear a noise coming from the washing machine. A man emerges. He wears a subnet mask and holds a machete. It's JSON. Do you fight him or objectify him",
+      "fight": {
+        "newscene": "death by json",
+        "Time Penalty": 10,
+        "requirements": [],
+        "earned": []
+      },
+      "objectify": {
+        "newscene": "choose jh labs",
+        "Time Penalty": 5,
+        "requirements": [],
+        "earned": []
+      }
+    },
+
+    "death by json": {
+      "prompt": "You are defeated by JSON. You fall to the ground. You are dead."
+    },
+
+    "choose jh labs": {
+      "prompt": "You have defeated JSON. You must choose which lab to enter. Do you go to the silent lab or the normal lab",
+      "silent lab": {
+        "newscene": "silent lab",
+        "Time Penalty": 10,
+        "requirements": [],
+        "earned": []
+      },
+      "normal lab": {
+        "newscene": "normal",
+        "Time Penalty": 5,
+        "requirements": [],
+        "earned": []
+      }
+    },
+
+    "silent lab": {
+      "prompt": "You enter to find a werewolf approaching one of your friends from behind. Do you yell to alert them or do nothing",
+      "Yell": {
+        "newscene": "kicked out",
+        "Time Penalty": 10,
+        "requirements": [],
+        "earned": []
+      },
+      "Nothing": {
+        "newscene": "nothing was done",
+        "Time Penalty": 5,
+        "requirements": [],
+        "earned": []
+      }
+    },
+
+    "kicked out": {
+      "prompt": "You are removed from the silent lab for breaking the rules. Through the glass you see your friend did not make it away in time. You give up"
+    },
+
+    "nothing was done": {
+      "prompt": "You watch as the werewolf attacks your friend. You have no time to mourn you must submit your practical. You submit the practical. You are free.",
+
+    },
+
+    "normal": {
+      "prompt": "You enter the room. There is a chill in the air. You are about to walk towards a desk when someone steps in your path. Do you have time",
+      "Yes": {
+        "newscene": "you have time",
+        "Time Penalty": 10,
+        "requirements": [],
+        "earned": []
+      },
+      "No": {
+        "newscene": "out of time",
+        "Time Penalty": 5,
+        "requirements": [],
+        "earned": []
+      }
+    },
+
+    "you have time": {
+      "prompt": "You pass by the person in your path. You reach a desk and submit your practical. You are free."
+
+    },
+
+    "out of time": {
+      "prompt": "You can't get rid of the person in your path. You miss the deadline. You have failed. "
+
+    }
+  
+  
 }
 
 
