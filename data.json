@@ -1,6 +1,6 @@
 {
   "bedroom": {
-    "prompt": "do you put on appropriate clothes or start on your way?",
+    "prompt": "Do you put on appropriate clothes or start on your way?",
     "put on appropriate clothes": {
       "newscene": "outside, appropriate clothing",
       "Time Penalty": 0,
@@ -15,7 +15,7 @@
     }
   },    
   "bedroom 2": {
-    "prompt": "you throw on your jumper and your coat. you start toward the door and put your hand on it",
+    "prompt": "You throw on your jumper and your coat. You start toward the door",
     "leave": {
       "newscene": "outside inappropriate clothing",
       "Time Penalty": 0,
@@ -30,14 +30,14 @@
     }
   },   
   "outside, inappropriate clothing": {
-    "prompt": "You step out of the DRA building. wind howls and rain pelts you. You shiver in your coding pun t-shirt and your open zip hoodie. Do you go to get your bike or start running",
-    "run": {
+    "prompt": "You step out of the DRA building, wind howls and rain pelts you. You shiver in your coding pun t-shirt. Do you go to get your bike or start running",
+    "Decide to just run there": {
       "newscene": "run",
       "Time Penalty": 10,
       "requirements": [],
       "earned": []
     },
-    "bike": {
+    "Take the bike": {
       "newscene": "cycle",
       "Time Penalty": 5,
       "requirements": [],
@@ -45,14 +45,14 @@
     }
   },
   "outside, appropriate clothing": {
-    "prompt": "You step out of the DRA building. wind howels and rain pelts you but you are well protected in your warm clothing. Do you go to get your bike or start running",
-    "run": {
+    "prompt": "You step out of the DRA building, wind howls and rain pelts you but you are well protected in your warm clothing. Do you go to get your bike or start running",
+    "Decide to just run there": {
       "newscene": "run",
       "Time Penalty": 10,
       "requirements": [],
       "earned": []
     },
-    "bike": {
+    "Take the bike": {
       "newscene": "cycle",
       "Time Penalty": 5,
       "requirements": [],
@@ -62,13 +62,13 @@
   "run": {
     "prompt": "You decide its probably safer in this weather on foot, and decide to run to the labs. Only one other person crosses your path. They stop you and show you a matriculation card they found, asking you if you recognise the person on it. You don't.",      
     "Say you will return it to its owner and accept the card": {
-      "newscene": "Devil",
+      "newscene": "ghost-card",
       "Time Penalty": 3,
       "requirements": [],
       "earned": ["card"]
     },
     "Refuse the card and carry on": {
-      "newscene": "Devil",
+      "newscene": "ghost-nocard",
       "Time Penalty": 0,
       "requirements": [],
       "earned": []
@@ -84,7 +84,7 @@
     }
  },
   "ghost-nocard": {
-    "prompt": "You accept refuse the card and continue on your way. You turn back to say something but the person is gone. You wonder if they were ever really there",
+    "prompt": "You accept refuse the card and continue on your way. You turn back to say something but the person is gone. You breifly wonder if they were ever really there, though you still have the card they gave you",
     "Continue onwards": {
       "newscene": "Devil",
       "Time Penalty": 3,
@@ -93,14 +93,14 @@
     }
   },
   "cycle": {
-    "prompt": "You are cycling down DRA path. You see a person in your way. Do you continue towards them or swerve to avoid them",
-    "towards": {
+    "prompt": "You are cycling down DRA path. You suddenly see a person in your way, you swear they werent there a moment ago. Do you continue towards them or swerve to avoid them",
+    "Continue going towards them": {
       "newscene": "through",
       "Time Penalty": 10,
       "requirements": [],
       "earned": []
     },
-    "swerve": {
+    "Swerve to avoid hitting them": {
       "newscene": "die on bike",
       "Time Penalty": 5,
       "requirements": [],
@@ -108,7 +108,7 @@
     }
   },
   "through": {
-    "prompt": "The person does not move out the way. You go through them. They were a ghost",
+    "prompt": "The person does not move out the way, but you go straight through them. You feel a slight chill as you do. Was that a ghost?",
     "continue": {
       "newscene": "devil",
       "Time Penalty": 10,
@@ -123,10 +123,10 @@
     }
   },
   "die on bike": {
-    "prompt": "You fall and die"
+    "prompt": "You skid in a puddle, go over the handle bars and die in a muddy ditch, doomed to haunt the DRA path forever more."
   }, 
   "devil":{
-    "prompt":"you step of the DRA path into the area above the north Huagh. In the shelter of the sport center your freind. ypu tell him what your doing. he says, stroking his goatee: 'you'll never make it on time. why don't you come with me amex for internships'", 
+    "prompt":"You leave the DRA path into the area above the North Huagh. In the shelter of the sport center your friend who waves you over and asks you what you're doing. He laughs, stroking his goatee: \"You'll never make it on time. why don't you come with me amex for internships\"", 
     "say yes": {
       "newscene": "Devil Death",
       "Time Penalty": 0,
@@ -141,10 +141,10 @@
     }
   },
   "devil death":{
-    "prompt":"your freind places his arm around your shoulder. his hoved feet start walking and his horn block the rain. you've fallen to your friend satans offer of the not trying. you've failed to submit. for shame " 
+    "prompt":"Your friend places his arm around your shoulder. His hooved feet click on the ground and his horn block you from the rain. You've fallen to your friend Satan's offer of not trying. You fail to submit the practical. For shame. " 
   },
   "choose lab": {
-    "prompt": "You approach the cs buildings. Do you go to Jonh honey or Jack cole",
+    "prompt": "You approach the cs buildings. Do you go to John honey or Jack cole?",
     "john honey": {
       "newscene": "john honey",
       "Time Penalty": 10,
@@ -159,14 +159,14 @@
     }
   },
   "jack cole":{
-  "prompt":"you enter into the building out of the cold of the stormy weather. your blasted by the heat but push through to get the lab. but between you and the door lumbering from the coffee area is your friend. Horror strikes you as you rember you had promised to help him. he Stand between  you and the door of the he stands. Suddenly a thunderus crack and the lights of the la flicker out and you are left in darkness. Almost as sudently the lights flicker back on but where your friend had been stood now stand a creature with the body of a lion with wings coming out of its side. you look at his face, the face of your friend. Answer me riddles three. first: can you inherit from multiple super classes in java?",
-    "say yes": {
+  "prompt":"You enter into the building out of the cold of the stormy weather and are blasted by the heat but you push through to get the lab. Between you and the door lumbering from the coffee area is your partner for a project. Horror strikes you as you remember you had promised to help him. He stands between you and the door of the lab. Suddenly you hear a thunderous crack and the lights of the lab flicker out leaving you in darkness. Almost as quickly the lights flicker back on, but where your friend had been stood now stands a creature... with his face but the body of a lion and wings coming out of its side! You blink in confusion as  you look at his face, the face of your friend. Answer me riddles three. first: can you inherit from multiple super classes in java?",
+    "Say \"yes\"": {
       "newscene": "question 2",
       "Time Penalty": 0,
       "requirements": [],
       "earned": []
     }, 
-    "say no":{
+    "Say \"no\"":{
       "newscene": "stuck at riddles",
       "Time Penalty": 0,
       "requirements": [],
@@ -174,14 +174,14 @@
     }
   },
   "question 2":{ 
-    "prompt":"'good, good. but now my second question' he says 'what is encaptualtion'",
-    "the proccess of making features of an object in OOP only accessable by methods in the ":{
+    "prompt":"\"Good, good. but now my second question, what is encaptualtion?\"",
+    "The proccess of making features of an object in OOP only accessable by methods in the object":{
       "newscene": "question 3",
       "Time Penalty": 0,
       "requirements": [],
       "earned": []
     }, 
-    "putting you computer in a rocket capsule":{
+    "putting your computer in a rocket capsule":{
       "newscene": "stuck at riddles",
       "Time Penalty": 0,
       "requirements": [],
@@ -189,7 +189,7 @@
     }
   },
   "question 3":{
-    "prompt": "good, good. but my third and final question: how much does the coffee cost in the labs",
+    "prompt": "Good, good. bYou face my third and final question: how much does the coffee cost in the labs?",
     "50 pence": {
       "newscene": "key",
       "Time Penalty": 0,
@@ -197,24 +197,24 @@
       "earned": []
     },
     "if no ones around its free": {
-      "newscene": "theif",
+      "newscene": "thief",
       "Time Penalty": 0,
       "requirements": [],
       "earned": []
     }
   },
   "stuck at riddles":{
-    "prompt": "'you got that wrong' - he snarled. he refuses to let you past" 
+    "prompt": "\"Wrong!\" - he snarles. He refuses to let you past." 
   },
   "theif":{
-  "prompt": "'you thief,' - he snarled. the lion body pounces and eats you as punishment for your crime" 
+  "prompt": "'\"You thief!\" - he snarles. The lion body pounces, devouring you as punishment for your henious crime." 
   },
   "key":{
-    "prompt": "he steps aside, and you stand before the door.",
+    "prompt": "He steps aside, and you stand before the door.",
     "you reach into your pocket to get your matric card":{
       "newscene":"jack cole lab",
       "time penelty": 0,
-      "requirment" ["card"],
+      "requirment": ["card"],
       "earned": []
     } 
   },
@@ -235,7 +235,7 @@
     },
 
     "death by json": {
-      "prompt": "You are defeated by JSON. You fall to the ground. You are dead."
+      "prompt": "You are no match for JSON! You fall to the ground. You are dead."
     },
 
     "choose jh labs": {
@@ -255,14 +255,14 @@
     },
 
     "silent lab": {
-      "prompt": "You enter to find a werewolf approaching one of your friends from behind. Do you yell to alert them or do nothing",
+      "prompt": "You enter to find a werewolf approaching one of your closest friend from behind. Do you yell to alert them or do nothing?",
       "Yell": {
         "newscene": "kicked out",
         "Time Penalty": 10,
         "requirements": [],
         "earned": []
       },
-      "Nothing": {
+      "Stand and do nothing": {
         "newscene": "nothing was done",
         "Time Penalty": 5,
         "requirements": [],
@@ -271,16 +271,16 @@
     },
 
     "kicked out": {
-      "prompt": "You are removed from the silent lab for breaking the rules. Through the glass you see your friend did not make it away in time. You give up"
+      "prompt": "You are removed from the silent lab for breaking the rules. Through the glass you see you watch in horror as your friend does not make it away in time. You give up, ovrecome with grief"
     },
 
     "nothing was done": {
-      "prompt": "You watch as the werewolf attacks your friend. You have no time to mourn you must submit your practical. You submit the practical. You are free.",
+      "prompt": "You watch as the werewolf attacks your friend. You have no time to mourn you must submit your practical. You submit the practical. You are free."
 
     },
 
     "normal": {
-      "prompt": "You enter the room. There is a chill in the air. You are about to walk towards a desk when someone steps in your path. Do you have time",
+      "prompt": "You enter the room. There is a chill in the air. You are about to walk towards a desk when someone steps in your path. You check your watch",
       "Yes": {
         "newscene": "you have time",
         "Time Penalty": 10,
