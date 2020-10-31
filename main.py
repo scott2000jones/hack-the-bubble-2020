@@ -17,7 +17,7 @@ def parsecmd(cmd):
         cmd = int(cmd)
     except ValueError:
         return False
-
+        
     # Replace this with stuff to update the state
     print(cmd)
     print(x['scene'][currentScene][str(cmd)])

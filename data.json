@@ -1,17 +1,66 @@
 {
   "scene": {
-    "dra": {
-      "1": {
-        "newscene": "path",
-        "nextprompt": "blablablabla",
-        "rating": 1
+    "bedroom": {
+      "prompt": "do you put on approprait clothes or start on your way?",
+      "put on approprait clothes": {
+        "newscene": "outside, inaproprait clothing",
+        "Time Penalty": 0,
+        "requirements": [],
+        "earned": []
       },
-      "2": {
-        "newscene": "lab",
-        "nextprompt": "blablablabla",
-        "rating": -1
+      "leave": {
+        "newscene": "bedroom 2",
+        "Time Penalty": 3,
+        "requirements": [],
+        "earned": ["warm clothing"]
       }
     },
-    "path": {}
+    "bedroom 2": {
+      "prompt": "you throw on your jumper and your coat. you start toward the door and put your hand on it",
+      "leave": {
+        "newscene": "outside approprait clothing",
+        "Time Penalty": 0,
+        "requirements": [],
+        "earned": []
+      },
+      "check around for what object you need": {
+        "newscene": "outside approprait clothing",
+        "Time Penalty": 3,
+        "requirements": [],
+        "earned": ["key, phone, card"]
+      }
+    },
+    "outside, inaproprait clothing": {
+      "prompt": "You step out of the DRA building. wind Howels and rain pelts you. you shiver in your coding pun t-shirt and your open zip hoodie. Do you go to get your bike or start running",
+      "Bike": {
+        "newscene": "Run",
+        "Time Penalty": 10,
+        "requirements": [],
+        "earned": []
+      },
+      "option2": {
+        "newscene": "Cycle",
+        "Time Penalty": 5,
+        "requirements": [],
+        "earned": ["bike"]
+      }
+    },
+    "outside, approprait clothing": {
+      "prompt": "You step out of the DRA building. wind Howels and rain pelts you but you are well protected in your warm clothing. Do you go to get your bike or start running",
+      "Bike": {
+        "newscene": "Run",
+        "Time Penalty": 10,
+        "requirements": [],
+        "earned": []
+      },
+      "option2": {
+        "newscene": "Cycle",
+        "Time Penalty": 5,
+        "requirements": [],
+        "earned": []
+      }
+    },
+    "Run": {}
   }
+
 }
