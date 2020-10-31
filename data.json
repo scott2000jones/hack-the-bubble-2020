@@ -123,6 +123,27 @@
       }
     }, 
     
+"devil":{
+  "prompt":"you step of the DRA path into the area above the north Huagh. In the shelter of the sport center your freind. ypu tell him what your doing. he says, stroking his goatee: 'you'll never make it on time. why don't you come with me amex for internships'", 
+  "say yes": {
+    "newscene": "Devil Death",
+    "Time Penalty": 0,
+    "requirements": [],
+    "earned": []
+  }, 
+    
+ "Reject":{
+    "newscene": "choose lab",
+    "Time Penalty": 0,
+    "requirements": [],
+    "earned": []
+  }
+},
+
+"Devil Death":{
+  "prompt":"your freind places his arm around your shoulder. his hoved feet start walking and his horn block the rain. you've fallen to your friend satans offer of the not trying. you've failed to submit. for shame " 
+}
+    
     "choose lab": {
       "prompt": "You approach the cs buildings. Do you go to Jonh honey or Jack cole",
       "john honey": {
