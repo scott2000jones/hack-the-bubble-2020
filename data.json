@@ -13,7 +13,7 @@
       "requirements": [],
       "earned": ["warm clothing"]
     }
-  },    
+  },
   "bedroom 2": {
     "prompt": "You throw on your jumper and your coat. You start toward the door",
     "leave": {
@@ -28,7 +28,7 @@
       "requirements": [],
       "earned": ["key", "phone", "card"]
     }
-  },   
+  },
   "outside, inappropriate clothing": {
     "prompt": "You step out of the DRA building, wind howls and rain pelts you. You shiver in your coding pun t-shirt. Do you go to get your bike or start running",
     "Decide to just run there": {
@@ -60,7 +60,7 @@
     }
   },
   "run": {
-    "prompt": "You decide its probably safer in this weather on foot, and decide to run to the labs. Only one other person crosses your path. They stop you and show you a matriculation card they found, asking you if you recognise the person on it. You don't.",      
+    "prompt": "You decide its probably safer in this weather on foot, and decide to run to the labs. Only one other person crosses your path. They stop you and show you a matriculation card they found, asking you if you recognise the person on it. You don't.",
     "Say you will return it to its owner and accept the card": {
       "newscene": "ghost-card",
       "Time Penalty": 3,
@@ -124,16 +124,16 @@
   },
   "die on bike": {
     "prompt": "You skid in a puddle, go over the handle bars and die in a muddy ditch, doomed to haunt the DRA path forever more."
-  }, 
+  },
   "devil":{
-    "prompt":"You leave the DRA path into the area above the North Huagh. In the shelter of the sport center your friend who waves you over and asks you what you're doing. He laughs, stroking his goatee: \"You'll never make it on time. why don't you come with me amex for internships\"", 
-    "say yes": {
+    "prompt":"You leave the DRA path into the area above the North Huagh. In the shelter of the sport center your friend who waves you over and asks you what you're doing. He laughs, stroking his goatee: \"You'll never make it on time. Why don't you come over to my flat? We can do fun stuf like apply for internships at American Express\"",
+    "Go back to his flat and apply to American Express": {
       "newscene": "devil death",
       "Time Penalty": 0,
       "requirements": [],
       "earned": []
-    },    
-    "reject":{
+    },
+    "Turn down his offer and continue to the labs":{
       "newscene": "choose lab",
       "Time Penalty": 0,
       "requirements": [],
@@ -141,31 +141,31 @@
     }
   },
   "devil death":{
-    "prompt":"Your friend places his arm around your shoulder. His hooved feet click on the ground and his horn block you from the rain. You've fallen to your friend Satan's offer of not trying. You fail to submit the practical. For shame. " 
+    "prompt":"Your friend places his arm around your shoulder. His hooved feet click on the ground and his horn block you from the rain. You've fallen to your friend Satan's offer of not trying. You fail to submit the practical. For shame. "
   },
   "choose lab": {
-    "prompt": "You approach the cs buildings. Do you go to John honey or Jack cole?",
+    "prompt": "You approach the CS buildings. Do you go to John Honey or Jack Cole?",
     "John honey": {
-      "newscene": "john honey",
+      "newscene": "John Honey",
       "Time Penalty": 10,
       "requirements": [],
       "earned": []
     },
     "Jack cole": {
-      "newscene": "jack cole",
+      "newscene": "Jack Cole",
       "Time Penalty": 5,
       "requirements": [],
       "earned": []
     }
   },
-  "jack cole":{
-  "prompt":"You enter into the building out of the cold of the stormy weather and are blasted by the heat but you push through to get the lab. Between you and the door lumbering from the coffee area is your partner for a project. Horror strikes you as you remember you had promised to help him. He stands between you and the door of the lab. Suddenly you hear a thunderous crack and the lights of the lab flicker out leaving you in darkness. Almost as quickly the lights flicker back on, but where your friend had been stood now stands a creature... with his face but the body of a lion and wings coming out of its side! You blink in confusion as  you look at his face, the face of your friend. Answer me riddles three. first: can you inherit from multiple super classes in java?",
+  "Jack Cole":{
+  "prompt":"You enter into the building out of the cold of the stormy weather and are blasted by the heat but you push through to get the lab. Between you and the door lumbering from the coffee area is your partner for a project. Horror strikes you as you remember you had promised to help him. He stands between you and the door of the lab. Suddenly you hear a thunderous crack and the lights of the lab flicker out leaving you in darkness. Almost as quickly the lights flicker back on, but where your friend had been stood now stands a creature... with his face but the body of a lion and wings coming out of its side! You blink in confusion as you look at his face, the face of your friend. 'Answer me riddles three', he says ominously. 'First: can you inherit from multiple super classes in java?'",
     "Say \"yes\"": {
       "newscene": "question 2",
       "Time Penalty": 0,
       "requirements": [],
       "earned": []
-    }, 
+    },
     "Say \"no\"":{
       "newscene": "stuck at riddles",
       "Time Penalty": 0,
@@ -173,15 +173,15 @@
       "earned": []
     }
   },
-  "question 2":{ 
-    "prompt":"\"Good, good. but now my second question, what is encaptualtion?\"",
+  "question 2":{
+    "prompt":"\"Good, good. but now my second question, what is encapsulation?\"",
     "The proccess of making features of an object in OOP only accessable by methods in the object":{
       "newscene": "question 3",
       "Time Penalty": 0,
       "requirements": [],
       "earned": []
-    }, 
-    "putting your computer in a rocket capsule":{
+    },
+    "Putting your computer in a rocket capsule":{
       "newscene": "stuck at riddles",
       "Time Penalty": 0,
       "requirements": [],
@@ -196,7 +196,7 @@
       "requirements": [],
       "earned": []
     },
-    "if no ones around its free": {
+    "If no ones around it's free >:) ": {
       "newscene": "thief",
       "Time Penalty": 0,
       "requirements": [],
@@ -204,29 +204,29 @@
     }
   },
   "stuck at riddles":{
-    "prompt": "\"Wrong!\" - he snarles. He refuses to let you past." 
+    "prompt": "\"Wrong!\" - he snarles. He refuses to let you past."
   },
   "theif":{
-  "prompt": "'\"You thief!\" - he snarles. The lion body pounces, devouring you as punishment for your henious crime." 
+  "prompt": "'\"You thief!\" - he snarles. The lion body pounces, devouring you as punishment for your henious crime."
   },
   "key":{
     "prompt": "He steps aside, and you stand before the door.",
     "you reach into your pocket to get your matric card":{
-      "newscene":"jack cole lab",
+      "newscene":"Jack Cole lab",
       "time penelty": 0,
       "requirment": ["card"],
       "earned": []
-    } 
+    }
   },
-  "john honey": {
-      "prompt": "You enter john honey and hear a noise coming from the washing machine. A man emerges. He wears a subnet mask and holds a machete. It's JSON. Do you fight him or objectify him",
-      "fight": {
+  "John Honey": {
+      "prompt": "You enter John Honey and hear a noise coming from the washing machine. A man emerges. He wears a subnet mask and holds a machete. It's JSON. Do you dare fight him? Or do you try to stringify him into a JavaScript object?",
+      "Attempt to fight with JSON": {
         "newscene": "death by json",
         "Time Penalty": 10,
         "requirements": [],
         "earned": []
       },
-      "objectify": {
+      "Turn him into a JavaScript object": {
         "newscene": "choose jh labs",
         "Time Penalty": 5,
         "requirements": [],
@@ -239,15 +239,15 @@
     },
 
     "choose jh labs": {
-      "prompt": "You have defeated JSON. You must choose which lab to enter. Do you go to the silent lab or the normal lab",
+      "prompt": "You have defeated JSON. You must choose which lab to enter. Do you go to the quiet lab or the main John Honey lab?",
       "silent lab": {
-        "newscene": "silent lab",
+        "newscene": "Quiet lab",
         "Time Penalty": 10,
         "requirements": [],
         "earned": []
       },
       "normal lab": {
-        "newscene": "normal",
+        "newscene": "Main lab",
         "Time Penalty": 5,
         "requirements": [],
         "earned": []
@@ -304,11 +304,11 @@
       "prompt": "You get to a desk and submit your practical. You are free."
 
     },
-  
-  "jack cole lab":{
+
+  "Jack Cole lab":{
     "prompt": "You fumble and find your card and press it against the sensor. The door unlocks and you step inside, greeting you with the most unsetteling sight you have ever seen ever. The hunched over forms of sleep deprived cs students trying to bang in code before the deadline look up as you enter. You notice their skin looks weirdly pale and ill, even for a cs student. Something rotten smelling is in the air, like someone has ignored the rule to not bring in food from outside. You hear a great roaring as they stand up slowly and turn to stare at you as one. The figure nearest you groans out the phrase 'braaaaaaiiiiiiiiinnnnssssssss!'.",
     "You pick up the baseball bat. Why is there a baseball bat? Who knows, but you thank your lucky stars that there is.":{
-      "newscene": "bat scene", 
+      "newscene": "bat scene",
       "Time Penalty": 0,
       "requirments": [],
       "earned": ["baseball bat"]
@@ -319,30 +319,30 @@
       "requirments": [],
       "earned": []
     },
-    "You run to the computer and try and submit. You're not going to let zombies change your plan and make you lose a mark for being late":{
-      "newscene": "running end ",
+    "You run to the computer and try and submit. You're not going to let zombies change your plan and make you lose a mark for being late!":{
+      "newscene": "running end",
       "Time Penalty": 0,
       "requirments": [],
       "earned": []
-    }, 
+    },
     "Zombies? There is no such thing as zombies, dont be silly":{
-      "newscene": "idiots end", 
+      "newscene": "idiots end",
       "Time Penalty": 0,
       "requirments": [],
       "earned": []
     }
-  }, 
+  },
 
   "idiots end":{
-  "prompt": "Oh you're sure about that are you? Well it sucks to be you I guess. You are eaten alive by zombies"
+  "prompt": "Oh you're sure about that are you? Well it sucks to be you I guess. You are eaten alive by zombies. GAME OVER"
   },
 
   "running end":{
-  "prompt": "You run accross the room dodging the slow moving monsters but as you sit down they continue towards you. You log on, open mms, compress the file upload. sucess! Then you feel a sharp pain as you get bitten, but at least you submited!"
+  "prompt": "You run accross the room dodging the slow moving monsters but as you sit down they continue towards you. You log on, open mms, compress the file upload. sucess! Then you feel a sharp pain as you get bitten. Who knows what diseases you've been infected with, but at least you submitted! GAME OVER"
   },
 
   "cowards end":{
-    "prompt": "Well you are alive but you didnt manage to submit so what's the point really?"
+    "prompt": "Well you are alive, but you didnt manage to submit so what's the point really? GAME OVER"
   },
 
   "baseball scene":{
@@ -353,8 +353,8 @@
       "requirments": [],
       "earned": []
     },
-    "Swing at their bodies":{
-    "newscene": "win", 
+    "Take a swing at their bodies":{
+    "newscene": "win",
       "Time Penalty": 0,
       "requirments": [],
       "earned": []
@@ -362,12 +362,10 @@
   },
 
   "win":{
-   "prompt": "You smash the head of each zombie who runs at you in turn and push your way forward to a computer. Still swinging the racket you log on, load MMS and compress the file and upload. Victory is yours!"
+   "prompt": "You smash the head of each zombie who runs at you in turn and push your way forward to a computer. Still swinging the racket you log on, load MMS and compress the file and upload. Victory is yours! GAME OVER"
   },
 
   "lose":{
-    "prompt":"Are you an idiot? Everyone knows you swing for the head!"
+    "prompt":"Are you an idiot? Everyone knows you swing for the head! GAME OVER"
   }
 }
-
-
