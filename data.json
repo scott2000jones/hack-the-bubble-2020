@@ -128,7 +128,7 @@
   "devil":{
     "prompt":"You leave the DRA path into the area above the North Huagh. In the shelter of the sport center your friend who waves you over and asks you what you're doing. He laughs, stroking his goatee: \"You'll never make it on time. why don't you come with me amex for internships\"", 
     "say yes": {
-      "newscene": "Devil Death",
+      "newscene": "devil death",
       "Time Penalty": 0,
       "requirements": [],
       "earned": []
