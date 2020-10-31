@@ -1,6 +1,4 @@
 from tkinter import *
-from PIL import Image
-from PIL import ImageTk
 
 class GUI:
     def __init__(self, master):
@@ -8,25 +6,29 @@ class GUI:
         master.title("The Horrors of Practical Submission")
         master.geometry("600x500")
 
-        choices = 3
-        var = IntVar()
-        optionText = "haha"
+        textframe = Frame(master)
+        textframe.place(anchor = "n", relx = 0.5, rely = 0.2)
 
-        for f in range(0, choices):
-            option = Radiobutton(master, text=optionText + str(f), variable=var, value = f)
-            option.place(anchor = "n", relx = 0.5, y= 20 * f + 100)
+        optionframe = Frame(master)
+        optionframe.place(anchor = "s", relx = 0.5, rely = 0.8)
+
+        choices = [["choice 1", "this is where it goes"], ["this is a choice", "it goes here"], ["whoo another choice", "and it goes here"], ["ouioui baguette", "yummy"]]
+        self.makeOptions(choices, optionframe)
 
 
-        self.close_button = Button(master, text="Close", command=master.quit)
-        self.close_button.place(anchor = "n", relx =  0.5, rely = 0.95)
+        close_button = Button(master, text="Close", command=master.quit)
+        close_button.place(anchor = "s", relx =  0.5, rely = 1)
         
 
     def greet(self):
         print("Greetings!")
 
+    def makeOptions(self, choices, optionframe):
+        var = StringVar()
 
-
-
+        for choice in choices:
+            option = Radiobutton(optionframe, text=choice[0], variable=var, value=choice[1])
+            option.pack()
 
 
 root = Tk()
