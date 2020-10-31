@@ -1,6 +1,6 @@
 {
   "bedroom": {
-    "prompt": "Do you put on appropriate clothes or start on your way?",
+    "prompt": "Your sitting in your room in dra bashing out code and finaly finish. your body relaxes and you prepare to submit. the wind is howling outside and the thunder keep roaring.  you look out younr window and see the only light is that from the full moon. as you open mms to start uploading a crackles and the power cuts out. the power to your hall has been cut. as your uncharged computer spluters and dies you know what your going to have to do, your going to have to rush to the labs and submit there. Do you put on appropriate clothes or start on your way?",
     "put on appropriate clothes": {
       "newscene": "outside, appropriate clothing",
       "Time Penalty": 0,
