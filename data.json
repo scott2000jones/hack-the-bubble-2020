@@ -1,5 +1,4 @@
 {
-  "scene": {
     "bedroom": {
       "prompt": "do you put on appropriate clothes or start on your way?",
       "put on appropriate clothes": {
@@ -75,8 +74,25 @@
         "earned": []
       }
     },
-    
-    "Cycle": {
+    "ghost-card": {
+      "prompt": "You refuse the card and continue on your way. You turn back to say something but the person is gone. You wonder if they were ever really there.",
+      "Continue onwards": {
+        "newscene": "Devil",
+        "Time Penalty": 3,
+        "requirements": [],
+        "earned": ["card"]
+      }
+    },
+    "ghost-nocard": {
+      "prompt": "You accept refuse the card and continue on your way. You turn back to say something but the person is gone. You wonder if they were ever really there",
+      "Continue onwards": {
+        "newscene": "Devil",
+        "Time Penalty": 3,
+        "requirements": [],
+        "earned": ["card"]
+      }
+    }
+    "cycle": {
       "prompt": "You are cycling down DRA path. You see a person in your way. Do you continue towards them or swerve to avoid them",
       "towards": {
         "newscene": "through",
@@ -132,18 +148,16 @@
     "earned": []
   }, 
     
- "Reject":{
+ "reject":{
     "newscene": "choose lab",
     "Time Penalty": 0,
     "requirements": [],
     "earned": []
   }
-},
-
-"Devil Death":{
-  "prompt":"your freind places his arm around your shoulder. his hoved feet start walking and his horn block the rain. you've fallen to your friend satans offer of the not trying. you've failed to submit. for shame " 
-}
-    
+    },
+    "devil death":{
+      "prompt":"your freind places his arm around your shoulder. his hoved feet start walking and his horn block the rain. you've fallen to your friend satans offer of the not trying. you've failed to submit. for shame " 
+    }
     "choose lab": {
       "prompt": "You approach the cs buildings. Do you go to Jonh honey or Jack cole",
       "john honey": {
@@ -158,9 +172,7 @@
         "requirements": [],
         "earned": []
       }
-    }
-    
-  }
+   }
 }
 
 
