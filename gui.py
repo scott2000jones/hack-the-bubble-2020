@@ -24,7 +24,7 @@ textframe.place(anchor = "n", relx = 0.5, rely = 0.4)
 optionframe = Frame(master)
 optionframe.place(anchor = "s", relx = 0.5, rely = 0.8)
 
-text = Text(master, wrap=WORD)
+text = Text(master, wrap=WORD, width=80, height=10)
 text.pack()
 
 
