@@ -189,7 +189,7 @@
     }
   },
   "question 3":{
-    "prompt": "Good, good. bYou face my third and final question: how much does the coffee cost in the labs?",
+    "prompt": "Good, good. You face my third and final question: how much does the coffee cost in the labs?",
     "50 pence": {
       "newscene": "key",
       "Time Penalty": 0,
