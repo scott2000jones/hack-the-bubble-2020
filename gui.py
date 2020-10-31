@@ -67,14 +67,14 @@ def makeOptions(choices):
 
 def greet():
     # CHANGE THIS
-    makeOptions(x['scene']['Run'])
+    makeOptions(x['run'])
     print("Greetings!")
 
 time = '8:30pm'
 currentScene = 'bedroom'
 hasMatric = False
 
-makeOptions(x['scene'][currentScene])
+makeOptions(x[currentScene])
 
 close_button = Button(master, text="Close", command=master.quit)
 close_button.place(anchor = "s", relx =  0.5, rely = 1)
