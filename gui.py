@@ -24,12 +24,10 @@ textframe.place(anchor = "n", relx = 0.5, rely = 0.4)
 optionframe = Frame(master)
 optionframe.place(anchor = "s", relx = 0.5, rely = 0.8)
 
-def makePrompt(prompt):
-    textframe = Frame(master)
-    textframe.place(anchor = "n", relx = 0.5, rely = 0.4)
+text = Text(master, wrap=WORD)
+text.pack()
 
-    text = Label(textframe, text=prompt)
-    text.pack()
+
 
 def selectOption(varget):
     # print("_------------------------------")
@@ -55,9 +53,20 @@ def makeOptions(choices):
 
 def changeScene():
     tkOldCurrentScene.set(tkCurrentScene.get())
+    makePrompt(x[tkCurrentScene.get()]['prompt'])
     makeOptions(x[tkCurrentScene.get()])
     print("now in " + tkCurrentScene.get() + ", previously was in " + tkOldCurrentScene.get())
 
+def makePrompt(prompt):
+    # textframe = Frame(master)
+    # textframe.place(anchor = "n", relx = 0.5, rely = 0.4)
+    text.config(state=NORMAL)
+    text.delete('1.0', END)
+    text.insert(END, prompt)
+    text.config(state=DISABLED)
+
+
+makePrompt(x[tkCurrentScene.get()]['prompt'])
 makeOptions(x[tkCurrentScene.get()])
 
 close_button = Button(master, text="Close", command=master.quit)
@@ -66,7 +75,9 @@ close_button.place(anchor = "s", relx =  0.5, rely = 1)
 submit_button = Button(master, text="Submit", command=changeScene)
 submit_button.place(anchor = "s", relx =  0.5, rely = 0.9)
 
-makePrompt("Hello")
+
+
+
 
 
 
