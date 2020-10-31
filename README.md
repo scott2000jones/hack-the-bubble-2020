@@ -1,4 +1,5 @@
-# hack-the-bubble-2020
+# Silence of the Labs
+## Hack the Bubble 2020
 
 ### ideas
 - spooky theme
