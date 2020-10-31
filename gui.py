@@ -1,7 +1,25 @@
 from tkinter import *
 import json
+from tkinter.ttk import *
+from PIL import Image, ImageTk
+
 
 master = Tk()
+master.title("Silence of the Labs")
+
+frame = Frame(master, height=500, width=600)
+frame.pack()
+
+background = Image.open("imgs/bg.png")
+background = background.resize((600,500))
+background = ImageTk.PhotoImage(background)
+
+background_label = Label(frame, image=background)
+background_label.place(x=0,y=0,relwidth=1, relheight=1)
+
+style = Style()
+style.configure('TButton', font=('courier',14), foreground='black')
+style.configure('TRadiobutton', font=('courier'), foreground='black')
 
 
 f = open("data.json", "r")
@@ -10,22 +28,21 @@ x = json.loads(datastring)
 # print(x)
 
 time = '8:30pm'
-tkOldCurrentScene = StringVar(master, "bedroom")
-tkCurrentScene = StringVar(master, "bedroom")
+tkOldCurrentScene = StringVar(frame, "bedroom")
+tkCurrentScene = StringVar(frame, "bedroom")
 tkOldCurrentScene.set("bedroom")
 tkCurrentScene.set("bedroom")
-tkVarget = StringVar(master, "")
+tkVarget = StringVar(frame, "")
 print("currentscene starts as " + tkCurrentScene.get())
 earnedItems = []
 
-master.title("Silence of the Labs")
-master.geometry("600x500")
-textframe = Frame(master)
+
+textframe = Frame(frame)
 textframe.place(anchor = "n", relx = 0.5, rely = 0.4)
 # optionframe = Frame(master)
 # optionframe.place(anchor = "s", relx = 0.5, rely = 0.8)
 
-text = Text(master, wrap=WORD, width=80, height=10)
+text = Text(textframe, wrap=WORD, width=80, height=10, bg='black', fg='#4FB346')
 text.pack()
 
 
@@ -35,7 +52,7 @@ def selectOption(varget):
 
 def makeOptions(choices):
 
-    optionframe = Frame(master)
+    optionframe = Frame(frame)
     optionframe.place(anchor = "s", relx = 0.5, rely = 0.8)
     var = StringVar()
     for choice in choices:
@@ -68,10 +85,14 @@ def makePrompt(prompt):
 makePrompt(x[tkCurrentScene.get()]['prompt'])
 makeOptions(x[tkCurrentScene.get()])
 
-close_button = Button(master, text="Close", command=master.quit)
-close_button.place(anchor = "s", relx =  0.5, rely = 1)
+button = Image.open("imgs/button.png")
+button = button.resize((100,20))
+button = ImageTk.PhotoImage(button)
 
-submit_button = Button(master, text="Submit", command=changeScene)
+close_button = Button(frame, image=button, text="Close", compound=CENTER, command=master.quit)
+close_button.place(anchor = "s", relx =  0.5, rely = 1, y = -10)
+
+submit_button = Button(frame, image=button, text="Submit", compound=CENTER, command=changeScene)
 submit_button.place(anchor = "s", relx =  0.5, rely = 0.9)
 
 mainloop()
