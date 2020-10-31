@@ -171,7 +171,7 @@
     }
   },
   "jack cole":{
-  "prompt":"you enter into the building out of the cold of the stormy weather. your blasted by the heat but push through to get the lab. but between you and the door lumbering from the coffee area is your friend. Horror strikes you as you rember you had promised to help him. he Stand between  you and the door of the he stands. Suddenly a thunderus crack and the lights of the la flicker out and you are left in darkness. Almost as sudently the lights flicker back on but where your friend had been stood now stand a creature with the body of a lion with wings coming out of its side. you look at his face, the face of your friend. Answer me riddles three. first: can you inherit from multiple super classes in java?"
+  "prompt":"you enter into the building out of the cold of the stormy weather. your blasted by the heat but push through to get the lab. but between you and the door lumbering from the coffee area is your friend. Horror strikes you as you rember you had promised to help him. he Stand between  you and the door of the he stands. Suddenly a thunderus crack and the lights of the la flicker out and you are left in darkness. Almost as sudently the lights flicker back on but where your friend had been stood now stand a creature with the body of a lion with wings coming out of its side. you look at his face, the face of your friend. Answer me riddles three. first: can you inherit from multiple super classes in java?",
     "say yes": {
       "newscene": "question 2",
       "Time Penalty": 0,
