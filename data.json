@@ -305,7 +305,69 @@
 
     }
   
-  
+  "jack cole lab":{
+"promp": "you fumble and find your card, press it against the sensor. the door unlocks and you step inside. what greets you is the most unsetteling sight you have ever seen ever. the hunched over forms of sleep deprived cs students trying to bang in code before the deadline look up as you enter. the skin of the nearest looks weirdly pail and ill looking even for a cs student. something rotten smelling is in the air like someone has ignore the rule to not bring in food from outside. a great groaning came from them. then they stood up and the figure nearest you groans out the phrase 'braaaaaaiiiiiiiiinnnnssssssss!' and you realise with horror what has happened.",
+"you pick up the baseball bat. why is there a baseball bat? who knows, but you thank your lucky stars that there is":{
+"newscence": "bat scene". 
+"Time Penalty": 0
+"requirments" [],
+"earned": ["basseball bat"]
+},
+"you run out of the room":{
+"newscence": "cowards end". 
+"Time Penalty": 0
+"requirments" [],
+"earned": []
+},
+"you run to the computer and try and submit. your not going to let zombies change your plan and make you loose a mark for being late":{
+"newscence": "running end ". 
+"Time Penalty": 0
+"requirments" [],
+"earned": []
+}, 
+"there is no such thing as zombies, dont be silly":{
+"newscence": "idiots end". 
+"Time Penalty": 0
+"requirments" [],
+"earned": []
+}
+}, 
+
+"idiots end":{
+"prompt": "oh you sure are you? well sucks to be you i geuss. your eaten alive by zombies"
+},
+
+"running end":{
+"prompt": "you run accross the room dodging the slow arm weilding mosters. but as you sit down they turn and start at you. you log on, open mms, compress the file upload. sucess! then then you feel a sharp pain as you get bitten. but atleast you submited you think as you loose yourself to the virus"
+},
+
+"cowards end":{
+"prompt": "well you are alive but you didnt submit so whats the point really?"
+}.
+
+"baseball scene":{
+"prompt": "you pick up the bat and prepare to swing at the approaching zob=mbies",
+"heads"{
+"newscence": "loose". 
+"Time Penalty": 0
+"requirments" [],
+"earned": []
+},
+"bodeis":{
+"newscence": "win". 
+"Time Penalty": 0
+"requirments" [],
+"earned": []
+}
+},
+
+"win":{
+"prompt": "you smash the head of each zombie who runs at you in turn and push your way forward toa computer. still swinging the racket you log on, load mms and compress the file and upload. victory"
+},
+
+"loose":{
+"prompt":"are you an idiot? like everyone knows you swing for the head"
+}
 }
 
 
