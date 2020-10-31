@@ -215,6 +215,24 @@
       "earned": []
     }
   }
+  
+  "stuck at riddles":{
+"prompt": "'you got that wrong' - he snarled. he refuses to let you past" 
+}
+
+"theif":{
+"prompt": "'you thief,' - he snarled. the lion body pounces and eats you as punishment for your crime" 
+}
+
+"key":{
+"prompt": "he steps aside, and you stand before the door.",
+"you reach into your pocket to get your matric card":{
+"newscene":"jack cole lab"
+"time penelty": 0,
+"requirment" ["card"].
+"earned": []
+} 
+}
 }
 
 
