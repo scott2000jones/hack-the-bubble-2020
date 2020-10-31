@@ -32,13 +32,13 @@
     "outside, inappropriate clothing": {
       "prompt": "You step out of the DRA building. wind howls and rain pelts you. You shiver in your coding pun t-shirt and your open zip hoodie. Do you go to get your bike or start running",
       "Bike": {
-        "newscene": "Run",
+        "newscene": "run",
         "Time Penalty": 10,
         "requirements": [],
         "earned": []
       },
       "option2": {
-        "newscene": "Cycle",
+        "newscene": "cycle",
         "Time Penalty": 5,
         "requirements": [],
         "earned": ["bike"]
@@ -47,19 +47,19 @@
     "outside, appropriate clothing": {
       "prompt": "You step out of the DRA building. wind howels and rain pelts you but you are well protected in your warm clothing. Do you go to get your bike or start running",
       "Bike": {
-        "newscene": "Run",
+        "newscene": "run",
         "Time Penalty": 10,
         "requirements": [],
         "earned": []
       },
       "option2": {
-        "newscene": "Cycle",
+        "newscene": "cycle",
         "Time Penalty": 5,
         "requirements": [],
         "earned": []
       }
     },
-    "Run": {
+    "run": {
       "prompt": "You decide its probably safer in this weather on foot, and decide to run to the labs. Only one other person crosses your path. They stop you and show you a matriculation card they found, asking you if you recognise the person on it. You don't.",
       "Say you will return it to its owner and accept the card": {
         "newscene": "Devil",
@@ -157,7 +157,7 @@
     },
     "devil death":{
       "prompt":"your freind places his arm around your shoulder. his hoved feet start walking and his horn block the rain. you've fallen to your friend satans offer of the not trying. you've failed to submit. for shame " 
-    }
+    },
     "choose lab": {
       "prompt": "You approach the cs buildings. Do you go to Jonh honey or Jack cole",
       "john honey": {
