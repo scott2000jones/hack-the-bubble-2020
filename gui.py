@@ -52,9 +52,16 @@ master = Tk()
 master.title("Silence of the Labs")
 master.geometry("600x500")
 textframe = Frame(master)
-textframe.place(anchor = "n", relx = 0.5, rely = 0.2)
+textframe.place(anchor = "n", relx = 0.5, rely = 0.4)
 optionframe = Frame(master)
 optionframe.place(anchor = "s", relx = 0.5, rely = 0.8)
+
+def makePrompt(prompt):
+    textframe = Frame(master)
+    textframe.place(anchor = "n", relx = 0.5, rely = 0.4)
+
+    text = Label(textframe, text=prompt)
+    text.pack()
 
 def makeOptions(choices):
     optionframe = Frame(master)
@@ -73,6 +80,8 @@ def greet():
 time = '8:30pm'
 currentScene = 'bedroom'
 hasMatric = False
+
+makePrompt("Hello")
 
 makeOptions(x[currentScene])
 
