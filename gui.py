@@ -66,7 +66,8 @@ def makeOptions(choices):
             option.pack()
 
 def greet():
-    makeOptions(x['scene'][currentScene])
+    # CHANGE THIS
+    makeOptions(x['scene']['Run'])
     print("Greetings!")
 
 time = '8:30pm'
