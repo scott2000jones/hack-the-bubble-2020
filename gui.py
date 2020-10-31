@@ -7,32 +7,18 @@ class GUI:
         self.master = master
         master.title("The Horrors of Practical Submission")
         master.geometry("600x500")
-        
-        '''
-        background = Image.open("imgs/bg.jpg")
-        background = background.resize((20,20))
-        background = ImageTk.PhotoImage(background)
 
-        self.background_label = Label(master, image=background)
-        self.background_label.pack()
-        '''
+        choices = 3
+        var = IntVar()
+        optionText = "haha"
 
-        
-        
-        self.frame = Frame(master, bg="Red")
-        self.frame.pack()
+        for f in range(0, choices):
+            option = Radiobutton(master, text=optionText + str(f), variable=var, value = f)
+            option.place(anchor = "n", relx = 0.5, y= 20 * f + 100)
 
-        self.label = Label(self.frame, text="This is a GUI!")
-        self.label.pack()
 
-        self.entry = Entry(self.frame, fg="yellow", bg="blue", width="50")
-        self.entry.pack()
-
-        self.greet_button = Button(self.frame, text="Greet", bg="yellow", command=self.greet)
-        self.greet_button.pack()
-
-        self.close_button = Button(self.frame, text="Close", command=master.quit)
-        self.close_button.pack()
+        self.close_button = Button(master, text="Close", command=master.quit)
+        self.close_button.place(anchor = "n", relx =  0.5, rely = 0.95)
         
 
     def greet(self):
