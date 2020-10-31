@@ -326,7 +326,7 @@
       "earned": []
     }, 
     "Zombies? There is no such thing as zombies, dont be silly":{
-      "newscence": "idiots end", 
+      "newscene": "idiots end", 
       "Time Penalty": 0,
       "requirments": [],
       "earned": []
@@ -348,13 +348,13 @@
   "baseball scene":{
     "prompt": "You pick up the bat and prepare to swing at the approaching zombies",
     "Aim for their heads": {
-      "newscence": "lose",
+      "newscene": "lose",
       "Time Penalty": 0,
       "requirments": [],
       "earned": []
     },
     "Swing at their bodies":{
-    "newscence": "win", 
+    "newscene": "win", 
       "Time Penalty": 0,
       "requirments": [],
       "earned": []
