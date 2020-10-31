@@ -91,7 +91,7 @@
         "requirements": [],
         "earned": ["card"]
       }
-    }
+    },
     "cycle": {
       "prompt": "You are cycling down DRA path. You see a person in your way. Do you continue towards them or swerve to avoid them",
       "towards": {
