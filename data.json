@@ -303,71 +303,71 @@
     "out of time": {
       "prompt": "You can't get rid of the person in your path. You miss the deadline. You have failed. "
 
-    }
+    },
   
   "jack cole lab":{
-"promp": "you fumble and find your card, press it against the sensor. the door unlocks and you step inside. what greets you is the most unsetteling sight you have ever seen ever. the hunched over forms of sleep deprived cs students trying to bang in code before the deadline look up as you enter. the skin of the nearest looks weirdly pail and ill looking even for a cs student. something rotten smelling is in the air like someone has ignore the rule to not bring in food from outside. a great groaning came from them. then they stood up and the figure nearest you groans out the phrase 'braaaaaaiiiiiiiiinnnnssssssss!' and you realise with horror what has happened.",
-"you pick up the baseball bat. why is there a baseball bat? who knows, but you thank your lucky stars that there is":{
-"newscence": "bat scene". 
-"Time Penalty": 0
-"requirments" [],
-"earned": ["basseball bat"]
-},
-"you run out of the room":{
-"newscence": "cowards end". 
-"Time Penalty": 0
-"requirments" [],
-"earned": []
-},
-"you run to the computer and try and submit. your not going to let zombies change your plan and make you loose a mark for being late":{
-"newscence": "running end ". 
-"Time Penalty": 0
-"requirments" [],
-"earned": []
-}, 
-"there is no such thing as zombies, dont be silly":{
-"newscence": "idiots end". 
-"Time Penalty": 0
-"requirments" [],
-"earned": []
-}
-}, 
+    "prompt": "You fumble and find your card and press it against the sensor. The door unlocks and you step inside, greeting you with the most unsetteling sight you have ever seen ever. The hunched over forms of sleep deprived cs students trying to bang in code before the deadline look up as you enter. You notice their skin looks weirdly pale and ill, even for a cs student. Something rotten smelling is in the air, like someone has ignored the rule to not bring in food from outside. You hear a great roaring as they stand up slowly and turn to stare at you as one. The figure nearest you groans out the phrase 'braaaaaaiiiiiiiiinnnnssssssss!'.",
+    "You pick up the baseball bat. Why is there a baseball bat? Who knows, but you thank your lucky stars that there is.":{
+      "newscene": "bat scene", 
+      "Time Penalty": 0,
+      "requirments": [],
+      "earned": ["baseball bat"]
+    },
+    "You run out of the room":{
+      "newscene": "cowards end",
+      "Time Penalty": 0,
+      "requirments": [],
+      "earned": []
+    },
+    "You run to the computer and try and submit. You're not going to let zombies change your plan and make you lose a mark for being late":{
+      "newscene": "running end ",
+      "Time Penalty": 0,
+      "requirments": [],
+      "earned": []
+    }, 
+    "Zombies? There is no such thing as zombies, dont be silly":{
+      "newscence": "idiots end", 
+      "Time Penalty": 0,
+      "requirments": [],
+      "earned": []
+    }
+  }, 
 
-"idiots end":{
-"prompt": "oh you sure are you? well sucks to be you i geuss. your eaten alive by zombies"
-},
+  "idiots end":{
+  "prompt": "Oh you're sure about that are you? Well it sucks to be you I geuss. You are eaten alive by zombies"
+  },
 
-"running end":{
-"prompt": "you run accross the room dodging the slow arm weilding mosters. but as you sit down they turn and start at you. you log on, open mms, compress the file upload. sucess! then then you feel a sharp pain as you get bitten. but atleast you submited you think as you loose yourself to the virus"
-},
+  "running end":{
+  "prompt": "You run accross the room dodging the slow moving monsters but as you sit down they continue towards you. You log on, open mms, compress the file upload. sucess! Then you feel a sharp pain as you get bitten, but at least you submited!"
+  },
 
-"cowards end":{
-"prompt": "well you are alive but you didnt submit so whats the point really?"
-}.
+  "cowards end":{
+    "prompt": "Well you are alive but you didnt manage to submit so what's the point really?"
+  },
 
-"baseball scene":{
-"prompt": "you pick up the bat and prepare to swing at the approaching zob=mbies",
-"heads"{
-"newscence": "loose". 
-"Time Penalty": 0
-"requirments" [],
-"earned": []
-},
-"bodeis":{
-"newscence": "win". 
-"Time Penalty": 0
-"requirments" [],
-"earned": []
-}
-},
+  "baseball scene":{
+    "prompt": "You pick up the bat and prepare to swing at the approaching zombies",
+    "Aim for their heads": {
+      "newscence": "lose",
+      "Time Penalty": 0,
+      "requirments": [],
+      "earned": []
+    },
+    "Swing at their bodies":{
+    "newscence": "win", 
+      "Time Penalty": 0,
+      "requirments": [],
+      "earned": []
+    }
+  },
 
-"win":{
-"prompt": "you smash the head of each zombie who runs at you in turn and push your way forward toa computer. still swinging the racket you log on, load mms and compress the file and upload. victory"
-},
+  "win":{
+   "prompt": "You smash the head of each zombie who runs at you in turn and push your way forward to a computer. Still swinging the racket you log on, load MMS and compress the file and upload. Victory is yours!"
+  },
 
-"loose":{
-"prompt":"are you an idiot? like everyone knows you swing for the head"
-}
+  "lose":{
+    "prompt":"Are you an idiot? Everyone knows you swing for the head!"
+  }
 }
 
 
