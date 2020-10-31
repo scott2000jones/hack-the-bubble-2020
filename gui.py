@@ -6,6 +6,7 @@ from PIL import Image, ImageTk
 
 master = Tk()
 master.title("Silence of the Labs")
+master.geometry("600x500")
 
 frame = Frame(master, height=500, width=600)
 frame.pack()
@@ -38,7 +39,7 @@ earnedItems = []
 
 
 textframe = Frame(frame)
-textframe.place(anchor = "n", relx = 0.5, rely = 0.4)
+textframe.place(anchor = "n", relx = 0.5, rely = 0.4, relwidth = 0.8)
 # optionframe = Frame(master)
 # optionframe.place(anchor = "s", relx = 0.5, rely = 0.8)
 
