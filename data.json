@@ -77,7 +77,7 @@
   "ghost-card": {
     "prompt": "You refuse the card and continue on your way. You turn back to say something but the person is gone. You wonder if they were ever really there.",
     "Continue onwards": {
-      "newscene": "Devil",
+      "newscene": "devil",
       "Time Penalty": 3,
       "requirements": [],
       "earned": ["card"]
@@ -86,7 +86,7 @@
   "ghost-nocard": {
     "prompt": "You accept refuse the card and continue on your way. You turn back to say something but the person is gone. You breifly wonder if they were ever really there, though you still have the card they gave you",
     "Continue onwards": {
-      "newscene": "Devil",
+      "newscene": "devil",
       "Time Penalty": 3,
       "requirements": [],
       "earned": ["card"]
