@@ -240,13 +240,13 @@
 
     "choose jh labs": {
       "prompt": "You have defeated JSON. You must choose which lab to enter. Do you go to the quiet lab or the main John Honey lab?",
-      "silent lab": {
+      "Quiet Lab": {
         "newscene": "Quiet lab",
         "Time Penalty": 10,
         "requirements": [],
         "earned": []
       },
-      "normal lab": {
+      "Main lab": {
         "newscene": "Main lab",
         "Time Penalty": 5,
         "requirements": [],
@@ -254,7 +254,7 @@
       }
     },
 
-    "silent lab": {
+    "Quiet lab": {
       "prompt": "You enter to find a werewolf approaching one of your closest friend from behind. Do you yell to alert them or do nothing?",
       "Yell": {
         "newscene": "kicked out",
@@ -279,7 +279,7 @@
 
     },
 
-    "normal": {
+    "Main lab": {
       "prompt": "You enter the room. There is a chill in the air. You are about to walk towards a desk when someone steps in your path. Do you talk to them?",
       "Yes": {
         "newscene": "you have time",
