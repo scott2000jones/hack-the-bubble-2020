@@ -1,9 +1,9 @@
 {
   "scene": {
     "bedroom": {
-      "prompt": "do you put on approprait clothes or start on your way?",
-      "put on approprait clothes": {
-        "newscene": "outside, inaproprait clothing",
+      "prompt": "do you put on appropriate clothes or start on your way?",
+      "put on appropriate clothes": {
+        "newscene": "outside, appropriate clothing",
         "Time Penalty": 0,
         "requirements": [],
         "earned": []
@@ -18,20 +18,20 @@
     "bedroom 2": {
       "prompt": "you throw on your jumper and your coat. you start toward the door and put your hand on it",
       "leave": {
-        "newscene": "outside approprait clothing",
+        "newscene": "outside inappropriate clothing",
         "Time Penalty": 0,
         "requirements": [],
         "earned": []
       },
       "check around for what object you need": {
-        "newscene": "outside approprait clothing",
+        "newscene": "outside inappropriate clothing",
         "Time Penalty": 3,
         "requirements": [],
-        "earned": ["key, phone, card"]
+        "earned": ["key", "phone", "card"]
       }
     },   
-    "outside, inaproprait clothing": {
-      "prompt": "You step out of the DRA building. wind Howels and rain pelts you. you shiver in your coding pun t-shirt and your open zip hoodie. Do you go to get your bike or start running",
+    "outside, inappropriate clothing": {
+      "prompt": "You step out of the DRA building. wind howls and rain pelts you. You shiver in your coding pun t-shirt and your open zip hoodie. Do you go to get your bike or start running",
       "Bike": {
         "newscene": "Run",
         "Time Penalty": 10,
@@ -45,8 +45,8 @@
         "earned": ["bike"]
       }
     },
-    "outside, approprait clothing": {
-      "prompt": "You step out of the DRA building. wind Howels and rain pelts you but you are well protected in your warm clothing. Do you go to get your bike or start running",
+    "outside, appropriate clothing": {
+      "prompt": "You step out of the DRA building. wind howels and rain pelts you but you are well protected in your warm clothing. Do you go to get your bike or start running",
       "Bike": {
         "newscene": "Run",
         "Time Penalty": 10,
@@ -60,7 +60,23 @@
         "earned": []
       }
     },
-    "Run": {}
+    "Run": {
+      "prompt": "You decide its probably safer in this weather on foot, and decide to run to the labs. Only one other person crosses your path. They stop you and show you a matriculation card they found, asking you if you recognise the person on it. You don't.",
+      "Say you will return it to its owner and accept the card": {
+        "newscene": "Devil",
+        "Time Penalty": 3,
+        "requirements": [],
+        "earned": ["card"]
+      },
+      "Refuse the card and carry on": {
+        "newscene": "Devil",
+        "Time Penalty": 0,
+        "requirements": [],
+        "earned": []
+      }
+    }
+    
   }
-
 }
+
+
