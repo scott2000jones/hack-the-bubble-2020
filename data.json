@@ -1,178 +1,175 @@
 {
-    "bedroom": {
-      "prompt": "do you put on appropriate clothes or start on your way?",
-      "put on appropriate clothes": {
-        "newscene": "outside, appropriate clothing",
-        "Time Penalty": 0,
-        "requirements": [],
-        "earned": []
-      },
-      "leave": {
-        "newscene": "bedroom 2",
-        "Time Penalty": 3,
-        "requirements": [],
-        "earned": ["warm clothing"]
-      }
+  "bedroom": {
+    "prompt": "do you put on appropriate clothes or start on your way?",
+    "put on appropriate clothes": {
+      "newscene": "outside, appropriate clothing",
+      "Time Penalty": 0,
+      "requirements": [],
+      "earned": []
     },
-    "bedroom 2": {
-      "prompt": "you throw on your jumper and your coat. you start toward the door and put your hand on it",
-      "leave": {
-        "newscene": "outside inappropriate clothing",
-        "Time Penalty": 0,
-        "requirements": [],
-        "earned": []
-      },
-      "check around for what object you need": {
-        "newscene": "outside inappropriate clothing",
-        "Time Penalty": 3,
-        "requirements": [],
-        "earned": ["key", "phone", "card"]
-      }
-    },   
-    "outside, inappropriate clothing": {
-      "prompt": "You step out of the DRA building. wind howls and rain pelts you. You shiver in your coding pun t-shirt and your open zip hoodie. Do you go to get your bike or start running",
-      "Bike": {
-        "newscene": "run",
-        "Time Penalty": 10,
-        "requirements": [],
-        "earned": []
-      },
-      "option2": {
-        "newscene": "cycle",
-        "Time Penalty": 5,
-        "requirements": [],
-        "earned": ["bike"]
-      }
+    "leave": {
+      "newscene": "bedroom 2",
+      "Time Penalty": 3,
+      "requirements": [],
+      "earned": ["warm clothing"]
+    }
+  },    
+  "bedroom 2": {
+    "prompt": "you throw on your jumper and your coat. you start toward the door and put your hand on it",
+    "leave": {
+      "newscene": "outside inappropriate clothing",
+      "Time Penalty": 0,
+      "requirements": [],
+      "earned": []
     },
-    "outside, appropriate clothing": {
-      "prompt": "You step out of the DRA building. wind howels and rain pelts you but you are well protected in your warm clothing. Do you go to get your bike or start running",
-      "Bike": {
-        "newscene": "run",
-        "Time Penalty": 10,
-        "requirements": [],
-        "earned": []
-      },
-      "option2": {
-        "newscene": "cycle",
-        "Time Penalty": 5,
-        "requirements": [],
-        "earned": []
-      }
-    },
+    "check around for what object you need": {
+      "newscene": "outside inappropriate clothing",
+      "Time Penalty": 3,
+      "requirements": [],
+      "earned": ["key", "phone", "card"]
+    }
+  },   
+  "outside, inappropriate clothing": {
+    "prompt": "You step out of the DRA building. wind howls and rain pelts you. You shiver in your coding pun t-shirt and your open zip hoodie. Do you go to get your bike or start running",
     "run": {
-      "prompt": "You decide its probably safer in this weather on foot, and decide to run to the labs. Only one other person crosses your path. They stop you and show you a matriculation card they found, asking you if you recognise the person on it. You don't.",
-      "Say you will return it to its owner and accept the card": {
-        "newscene": "Devil",
-        "Time Penalty": 3,
-        "requirements": [],
-        "earned": ["card"]
-      },
-      "Refuse the card and carry on": {
-        "newscene": "Devil",
-        "Time Penalty": 0,
-        "requirements": [],
-        "earned": []
-      }
+      "newscene": "run",
+      "Time Penalty": 10,
+      "requirements": [],
+      "earned": []
     },
-    "ghost-card": {
-      "prompt": "You refuse the card and continue on your way. You turn back to say something but the person is gone. You wonder if they were ever really there.",
-      "Continue onwards": {
-        "newscene": "Devil",
-        "Time Penalty": 3,
-        "requirements": [],
-        "earned": ["card"]
-      }
+    "bike": {
+      "newscene": "cycle",
+      "Time Penalty": 5,
+      "requirements": [],
+      "earned": ["bike"]
+    }
+  },
+  "outside, appropriate clothing": {
+    "prompt": "You step out of the DRA building. wind howels and rain pelts you but you are well protected in your warm clothing. Do you go to get your bike or start running",
+    "run": {
+      "newscene": "run",
+      "Time Penalty": 10,
+      "requirements": [],
+      "earned": []
     },
-    "ghost-nocard": {
-      "prompt": "You accept refuse the card and continue on your way. You turn back to say something but the person is gone. You wonder if they were ever really there",
-      "Continue onwards": {
-        "newscene": "Devil",
-        "Time Penalty": 3,
-        "requirements": [],
-        "earned": ["card"]
-      }
+    "bike": {
+      "newscene": "cycle",
+      "Time Penalty": 5,
+      "requirements": [],
+      "earned": []
+    }
+  },
+  "run": {
+    "prompt": "You decide its probably safer in this weather on foot, and decide to run to the labs. Only one other person crosses your path. They stop you and show you a matriculation card they found, asking you if you recognise the person on it. You don't.",      
+    "Say you will return it to its owner and accept the card": {
+      "newscene": "Devil",
+      "Time Penalty": 3,
+      "requirements": [],
+      "earned": ["card"]
     },
-    "cycle": {
-      "prompt": "You are cycling down DRA path. You see a person in your way. Do you continue towards them or swerve to avoid them",
-      "towards": {
-        "newscene": "through",
-        "Time Penalty": 10,
-        "requirements": [],
-        "earned": []
-      },
-      "swerve": {
-        "newscene": "die on bike",
-        "Time Penalty": 5,
-        "requirements": [],
-        "earned": []
-      }
-
+    "Refuse the card and carry on": {
+      "newscene": "Devil",
+      "Time Penalty": 0,
+      "requirements": [],
+      "earned": []
+    }
+  },
+  "ghost-card": {
+    "prompt": "You refuse the card and continue on your way. You turn back to say something but the person is gone. You wonder if they were ever really there.",
+    "Continue onwards": {
+      "newscene": "Devil",
+      "Time Penalty": 3,
+      "requirements": [],
+      "earned": ["card"]
+    }
+ },
+  "ghost-nocard": {
+    "prompt": "You accept refuse the card and continue on your way. You turn back to say something but the person is gone. You wonder if they were ever really there",
+    "Continue onwards": {
+      "newscene": "Devil",
+      "Time Penalty": 3,
+      "requirements": [],
+      "earned": ["card"]
+    }
+  },
+  "cycle": {
+    "prompt": "You are cycling down DRA path. You see a person in your way. Do you continue towards them or swerve to avoid them",
+    "towards": {
+      "newscene": "through",
+      "Time Penalty": 10,
+      "requirements": [],
+      "earned": []
     },
-    "through": {
-      "prompt": "The person does not move out the way. You go through them. They were a ghost",
-      "continue": {
-        "newscene": "devil",
-        "Time Penalty": 10,
-        "requirements": [],
-        "earned": []
-      },
-      "shock": {
-        "newscene": "devil",
-        "Time Penalty": 5,
-        "requirements": [],
-        "earned": []
-      }
+    "swerve": {
+      "newscene": "die on bike",
+      "Time Penalty": 5,
+      "requirements": [],
+      "earned": []
+    }
+  },
+  "through": {
+    "prompt": "The person does not move out the way. You go through them. They were a ghost",
+    "continue": {
+      "newscene": "devil",
+      "Time Penalty": 10,
+      "requirements": [],
+      "earned": []
     },
-    "die on bike": {
-      "prompt": "You die whoops",
-      "continue": {
-        "newscene": "nowhere?",
-        "Time Penalty": 10,
-        "requirements": [],
-        "earned": []
-      },
-      "shock": {
-        "newscene": "nowhere?",
-        "Time Penalty": 5,
-        "requirements": [],
-        "earned": []
-      }
-    }, 
-    
-"devil":{
-  "prompt":"you step of the DRA path into the area above the north Huagh. In the shelter of the sport center your freind. ypu tell him what your doing. he says, stroking his goatee: 'you'll never make it on time. why don't you come with me amex for internships'", 
-  "say yes": {
-    "newscene": "Devil Death",
-    "Time Penalty": 0,
-    "requirements": [],
-    "earned": []
+    "shock": {
+      "newscene": "devil",
+      "Time Penalty": 5,
+      "requirements": [],
+      "earned": []
+    }
+  },
+  "die on bike": {
+    "prompt": "You die whoops",
+    "continue": {
+      "newscene": "nowhere?",
+      "Time Penalty": 10,
+      "requirements": [],
+      "earned": []
+    },
+    "shock": {
+      "newscene": "nowhere?",
+      "Time Penalty": 5,
+      "requirements": [],
+      "earned": []
+    }
   }, 
-    
- "reject":{
-    "newscene": "choose lab",
-    "Time Penalty": 0,
-    "requirements": [],
-    "earned": []
+  "devil":{
+    "prompt":"you step of the DRA path into the area above the north Huagh. In the shelter of the sport center your freind. ypu tell him what your doing. he says, stroking his goatee: 'you'll never make it on time. why don't you come with me amex for internships'", 
+    "say yes": {
+      "newscene": "Devil Death",
+      "Time Penalty": 0,
+      "requirements": [],
+      "earned": []
+    },    
+    "reject":{
+      "newscene": "choose lab",
+      "Time Penalty": 0,
+      "requirements": [],
+      "earned": []
+    }
+  },
+  "devil death":{
+    "prompt":"your freind places his arm around your shoulder. his hoved feet start walking and his horn block the rain. you've fallen to your friend satans offer of the not trying. you've failed to submit. for shame " 
+  },
+  "choose lab": {
+    "prompt": "You approach the cs buildings. Do you go to Jonh honey or Jack cole",
+    "john honey": {
+      "newscene": "john honey",
+      "Time Penalty": 10,
+      "requirements": [],
+      "earned": []
+    },
+    "jack cole": {
+      "newscene": "jack cole",
+      "Time Penalty": 5,
+      "requirements": [],
+      "earned": []
+    }
   }
-    },
-    "devil death":{
-      "prompt":"your freind places his arm around your shoulder. his hoved feet start walking and his horn block the rain. you've fallen to your friend satans offer of the not trying. you've failed to submit. for shame " 
-    },
-    "choose lab": {
-      "prompt": "You approach the cs buildings. Do you go to Jonh honey or Jack cole",
-      "john honey": {
-        "newscene": "john honey",
-        "Time Penalty": 10,
-        "requirements": [],
-        "earned": []
-      },
-      "jack cole": {
-        "newscene": "jack cole",
-        "Time Penalty": 5,
-        "requirements": [],
-        "earned": []
-      }
-   }
 }
 
 
