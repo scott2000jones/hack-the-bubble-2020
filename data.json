@@ -1,0 +1,17 @@
+{
+  "scene": {
+    "dra": {
+      "option1": {
+        "newscene": "path",
+        "nextprompt": "blablablabla",
+        "rating": 1
+      },
+      "option2": {
+        "newscene": "lab",
+        "nextprompt": "blablablabla",
+        "rating": -1
+      }
+    },
+    "path": {}
+  }
+}

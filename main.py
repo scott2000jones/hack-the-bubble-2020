@@ -1,2 +1,3 @@
-print("spooky time ooooo")
-print("git practice")
+import parser
+
+print("spooky time")
