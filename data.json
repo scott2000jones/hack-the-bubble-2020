@@ -224,9 +224,9 @@
   "key":{
     "prompt": "he steps aside, and you stand before the door.",
     "you reach into your pocket to get your matric card":{
-      "newscene":"jack cole lab"
+      "newscene":"jack cole lab",
       "time penelty": 0,
-      "requirment" ["card"].
+      "requirment" ["card"],
       "earned": []
     } 
   }
